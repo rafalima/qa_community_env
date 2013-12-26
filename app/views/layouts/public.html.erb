@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+  <html lang="en">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>TW Automation Hands On</title>
+      <meta name="author" content="Rafael Lima">
+      <%= stylesheet_link_tag('public') %>
+    </head>
+    <body>
+    <div id="divTotal">
+      <div id="divHeader">
+        <%= render(:partial => "layouts/header_menu") %> 
+      </div>
+      <div id="divMiddle">
+        <%= render(:partial => "layouts/vertical_menu") %>
+        <div id="divContent">
+          <%= yield %>
+        </div>
+      </div>
+
+    </div>
+    </body>
+  </html>
+
+

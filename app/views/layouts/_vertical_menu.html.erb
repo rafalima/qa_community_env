@@ -1,0 +1,12 @@
+<% menu_options = get_sub_menus  %>
+
+<% unless menu_options.blank? %>
+    <div id="divMenuHorizontal">
+      <ul>
+        <% menu_options.each do |option| %>
+          <li><%=link_to_unless_current(option, { :action => option.downcase})%></li>
+        <% end %>
+      </ul>
+    </div>
+
+<% end %>

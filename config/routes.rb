@@ -1,4 +1,13 @@
 QaCommunityEnv::Application.routes.draw do
+  #get "public/index"
+  #get "public/html"
+  #get "public/automation"
+
+  root :to => "public#index"
+
+  get ':controller(/:action(/:id(.:format)))'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

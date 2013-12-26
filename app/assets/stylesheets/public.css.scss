@@ -1,0 +1,110 @@
+// Place all the styles related to the public controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$menu_ul_style: none outside none;
+$border_menu: 1px solid #cccccc;
+
+body {
+  margin:0;
+  padding:0;
+}
+
+a {
+  text-decoration: none;
+
+
+}
+
+#divTotal {
+  width:940px;
+  margin: 0 auto;
+}
+
+#divHeader {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#divLogo {
+  width: 113px;
+  float: left;
+  margin: 20px 0 5px 70px;
+}
+
+
+#ulNav {
+  float:left;
+  margin: 50px 0 0 0; 
+  padding: 0;
+  height: 10px;
+  font-size: 20px;
+
+  li {
+    height: 30px;
+    float:left;
+    list-style: $menu_ul_style;
+    border-right: $border_menu;
+    padding: 0 10px; 
+    background-color: #ffffff;
+    color: #000000;
+    display: inline-block;
+
+    &:first-child {border-left: $border_menu; }
+    
+    a {
+      border-top: 5px solid #e3e3e3;
+      background-color: #ffffff;
+      color: #000000;
+      display: block;
+      &:hover {border-top: 5px solid #424243 }
+ 
+    }
+  }
+
+}
+
+#line {
+  height: 10px;
+  width: 100%;
+  background-color: #000000;
+  clear: both;
+}
+
+#divContent {
+  float:left;
+}
+
+/*=================XPATH================*/
+
+$horizontalMenuSize: 183px;
+
+#divMenuHorizontal {
+  float:left;
+  clear: both;
+  width: 183px;
+  border-right:$border_menu;
+
+
+  ul {
+    padding:0;
+  }
+
+  li {
+    list-style: $menu_ul_style;    
+    border-bottom: $border_menu;
+    padding: 5px 0;
+    padding-left:10px;
+    margin-right: 10px;
+
+    &:first-child { border-top: $border_menu; }
+
+    a {
+      color: #FCA200;
+      &:hover { color: #000000 }
+    }
+
+  
+  }
+
+}

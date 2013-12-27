@@ -5,7 +5,11 @@ QaCommunityEnv::Application.routes.draw do
 
   root :to => "public#index"
 
-  get ':controller(/:action(/:id(.:format)))'
+  get '/public', to: 'public#index', as: 'public'
+
+  #resources :public
+
+  #get ':controller(/:action(/:id(.:format)))'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

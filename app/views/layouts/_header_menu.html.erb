@@ -4,10 +4,11 @@
   </a>
 </div>
 <ul id="ulNav">
-  <li><%= link_to_unless_current("Home", {:controller => "public", :action => "index"}) %></li>
-   <li><%= link_to_unless_current("Html",{:controller => "public", :action => "html"}) %></li>
-   <li><%= link_to_unless_current("Xpath", {:controller => "xpath", :action => "index"})%></li>
-   <li><%= link_to_unless_current("Automation", {:controller => "public", :action => "automation"})%></li>
+	 <li><%= link_to_unless_current "Home",public_path %></li>
+   <li><%= link_to_unless_current "Html" %></li>
+   <li><%= link_to_unless_current "Xpath" %></li>
+   <li><%= link_to_unless_current "Automation" %></li>
+  
 </ul>
 
 <div id="line"></div>

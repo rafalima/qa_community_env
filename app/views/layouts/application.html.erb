@@ -5,10 +5,21 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag('application') %>
+ 	<meta name="author" content="TW QAs">    
 </head>
-<body>
+    <body>
+    <div id="divTotal">
+      <div id="divHeader">
+        <%= render(:partial => "layouts/header_menu") %> 
+      </div>
+      <div id="divMiddle">
+        <%= render(:partial => "layouts/vertical_menu") %>
+        <div id="divContent">
+          <%= yield %>
+        </div>
+      </div>
 
-<%= yield %>
-
-</body>
-</html>
+    </div>
+    </body>
+  </html>

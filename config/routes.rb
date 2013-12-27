@@ -5,7 +5,7 @@ QaCommunityEnv::Application.routes.draw do
 
   root :to => "public#index"
 
-  get '/public', to: 'public#index', as: 'public'
+  get '/public', to: 'public#index'
 
   #resources :public
 

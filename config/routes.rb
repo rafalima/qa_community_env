@@ -7,6 +7,7 @@ QaCommunityEnv::Application.routes.draw do
 
   get '/public', to: 'public#index'
 
+  get '/html', to: 'html#index'
   #resources :public
 
   #get ':controller(/:action(/:id(.:format)))'
